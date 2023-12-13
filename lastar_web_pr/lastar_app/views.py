@@ -2,4 +2,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse('Привет')
+    return render(request, 'lastar_app/base.html')

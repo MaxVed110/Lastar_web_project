@@ -1,0 +1,168 @@
+.content {
+
+}
+
+.introduction {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+    max-height: 1280px;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.intro_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: calc(100vh + 79px);
+    z-index: -9999;
+}
+
+.annotation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 20px;
+    position: relative;
+}
+
+.annotation_title {
+    color: aliceblue;
+}
+
+.annotation_txt {
+    color: aliceblue;
+}
+
+
+.shadow {
+    width: 712px;
+    height: 402px;
+    position: relative;
+}
+
+.shadow::after {
+    content: '';
+    top:0; left:0; right:0; bottom:0;
+    position: absolute;
+    box-shadow: 0px 0px 30px 30px #04263e inset;
+    border-radius: 20px;
+}
+
+.top_img {
+    height: 400px;
+    border-radius: 20px;
+}
+
+.container_greed {
+    display: grid;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(20, 50px);
+    grid-template-rows: repeat(37, 20px);
+    justify-content: center;
+}
+
+.cont_center_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.algoritms {
+    position: relative;
+    grid-column: 1 / 8 ;
+    grid-row: 1 / 23;
+    padding: 5px;
+
+}
+
+.item1 {
+    width: 340px;
+    height: 430px;
+    background-color: #22d36ea3;
+}
+
+.algoritms_img {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 340px;
+    height: 430px;
+    z-index: -5;
+}
+
+.data_struct {
+    position: relative;
+    grid-column: 8 / 21;
+    grid-row: 1 / 16;
+}
+
+.item2 {
+    width: 640px;
+    height: 290px;
+    background-color: #d34122a3;
+}
+
+.data_struct_img {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 640px;
+    height: 290px;
+    z-index: -5;
+}
+
+.o_n {
+    position: relative;
+    grid-column: 14 / 21;
+    grid-row: 16 / 38;
+}
+
+.item3 {
+    width: 340px;
+    height: 430px;
+    background-color: #d3228f6e;
+}
+
+.o_n_img {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 340px;
+    height: 430px;
+    z-index: -5;
+}
+
+.py_path {
+    position: relative;
+    grid-column: 1 / 14;
+    grid-row: 23 / 38;
+}
+
+.item4 {
+    width: 640px;
+    height: 290px;
+    background-color: #229bd3a3;
+}
+
+.py_path_img {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 640px;
+    height: 290px;
+    z-index: -5;
+}
+
+.connect {
+    width: 290px;
+    height: 130px;
+    border: 1px solid black;
+}

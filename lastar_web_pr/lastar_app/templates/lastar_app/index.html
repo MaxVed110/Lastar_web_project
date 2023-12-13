@@ -1,0 +1,63 @@
+{% extends 'lastar_app/base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+{% block connect %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<section class="introduction center">
+    <video class="intro_video" autoplay loop muted src="./videos/bg.mp4"></video>
+    <div class="annotation">
+        <h1 class="annotation_title">УДИВИТЕЛЬНЫЙ МИР АЛГОРИТМОВ</h1>
+        <p class="annotation_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quos dolore atque
+            laborum eius ducimus
+            placeat unde magni blanditiis ratione.</p>
+    </div>
+    <div class="shadow">
+        <img class="top_img" src="./img/beautiful_algorithm.png" alt="beautiful_algorithm">
+    </div>
+</section>
+
+<div class="container_greed center">
+    <div class="algoritms cont_center_item">
+        <a href="#">
+            <div class="item1">
+                <img class="algoritms_img" src="img/algoritms.jpg" alt="">
+                <h1>Алгоритмы</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="data_struct cont_center_item">
+        <a href="#">
+            <div class="item2">
+                <img class="data_struct_img" src="img/data_struct.jpg" alt="">
+                <h1>Структуры данных</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="o_n cont_center_item">
+        <a href="#">
+            <div class="item3">
+                <img class="o_n_img" src="img/o_n.jpg" alt="">
+                <h1>Сложность алгоритмов</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="py_path cont_center_item">
+        <a href="#">
+            <div class="item4">
+                <img class="py_path_img" src="img/python-logo.jpg" alt="">
+                <h1>Мануал Python</h1>
+            </div>
+        </a>
+    </div>
+    <div class="connect cont_center_item">
+        <a href="#">connect</a>
+    </div>
+</div>
+{% endblock %}

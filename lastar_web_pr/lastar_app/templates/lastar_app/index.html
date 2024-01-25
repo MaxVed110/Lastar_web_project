@@ -1,6 +1,6 @@
 {% extends 'lastar_app/base.html' %}
+{% load static %}
 
-{% block title %} {{title}} {% endblock %}
 {% block connect %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
@@ -24,7 +24,7 @@
     <div class="algoritms cont_center_item">
         <a href="#">
             <div class="item1">
-                <img class="algoritms_img" src="img/algoritms.jpg" alt="">
+                <img class="algoritms_img" src="{% static 'img/algoritms.jpg' %}" alt="">
                 <h1>Алгоритмы</h1>
             </div>
         </a>
@@ -33,7 +33,7 @@
     <div class="data_struct cont_center_item">
         <a href="#">
             <div class="item2">
-                <img class="data_struct_img" src="img/data_struct.jpg" alt="">
+                <img class="data_struct_img" src="{%  static 'img/data_struct.jpg' %}" alt="">
                 <h1>Структуры данных</h1>
             </div>
         </a>
@@ -42,7 +42,7 @@
     <div class="o_n cont_center_item">
         <a href="#">
             <div class="item3">
-                <img class="o_n_img" src="img/o_n.jpg" alt="">
+                <img class="o_n_img" src="{% static 'img/o_n.jpg' %}" alt="">
                 <h1>Сложность алгоритмов</h1>
             </div>
         </a>
@@ -51,7 +51,7 @@
     <div class="py_path cont_center_item">
         <a href="#">
             <div class="item4">
-                <img class="py_path_img" src="img/python-logo.jpg" alt="">
+                <img class="py_path_img" src="{% static 'img/python-logo.jpg' %}" alt="">
                 <h1>Мануал Python</h1>
             </div>
         </a>

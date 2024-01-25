@@ -1,0 +1,50 @@
+{% extends 'lastar_app/base.html' %}
+{% load static %}
+
+{% block title %} {{title}} {% endblock %}
+{% block connect %}
+<link rel="stylesheet" href="{% static 'css/list_categ.css' %}">
+<script src="{% static 'js/script_list_cat.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <h1 class="algo_title">Структуры данных</h1>
+    <ul class="tree">
+        <li>Статический и динамический массивы</li>
+        <li class="discover">
+            <summary class="trigger">Деревья и графы</summary>
+            <ul>
+                <li>Нагруженное дерево (Trie)</li>
+                <li class="discover1">
+                    <summary class="trigger1">Самобалансирующиеся двоичные деревья поиска</summary>
+                    <ul>
+                        <li>AA Tree</li>
+                        <li>AVL BST</li>
+                        <li>Red-Black Tree</li>
+                    </ul>
+                </li>
+                <li class="discover2">
+                    <summary class="trigger2">n-арное дерево</summary>
+                    <ul>
+                        <li>B-Tree</li>
+                    </ul>
+                </li>
+                <li>Двоичное поисковое дерево</li>
+                <li>Лист нодов или унарное дерево</li>
+                <li>Граф</li>
+                <li>Дерево отрезков</li>
+                <li>Дерево Фенвика</li>
+                <li>k-ичная Куча</li>
+                <li>Фиббоначчиева Куча</li>
+                <li>Двоичная Куча</li>
+            </ul>
+        </li>
+        <li>Стэк (Stak or LIFO)</li>
+        <li>Очередь (Stak or FIFO)</li>
+        <li>Приоритетная очередь</li>
+        <li>Хэш-таблица/словарь (Hashtable or Dict/Map)</li>
+        <li class="last">Множество (Set)</li>
+    </ul>
+</div>
+{% endblock %}

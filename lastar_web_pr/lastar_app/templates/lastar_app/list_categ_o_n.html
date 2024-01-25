@@ -1,0 +1,23 @@
+{% extends 'lastar_app/base.html' %}
+{% load static %}
+
+{% block title %} {{title}} {% endblock %}
+{% block connect %}
+<link rel="stylesheet" href="{% static 'css/list_categ.css' %}">
+<link rel="stylesheet" href="{% static 'css/list_categ_o_n.css' %}">
+<script src="{% static 'js/script_list_cat.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="about">
+  <h1 class="algo_title">Оценка сложности алгоритмов</h1>
+  <ul class="tree">
+    <li>Время Runtime</li>
+    <li>Memory usage</li>
+    <li>Нотация О (O-notation)</li>
+    <li>Мастер-Теорема (Master Theorem)</li>
+  </ul>
+</div>
+
+{% endblock %}

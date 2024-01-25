@@ -1,0 +1,47 @@
+{% extends 'lastar_app/base.html' %}
+{% load static %}
+
+{% block title %} {{title}} {% endblock %}
+{% block connect %}
+<link rel="stylesheet" href="{% static 'css/list_categ.css' %}">
+<script src="{% static 'js/script_list_cat.js' %}" defer></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="about">
+  <h1 class="algo_title">PyPath (Информация о языке программирования Python)</h1>
+  <ul class="tree">
+    <li class="discover">
+      <summary class="trigger">Введение в Python</summary>
+      <ul>
+        <li>PEP8</li>
+      </ul>
+    </li>
+    <li>Ввод и вывод данных</li>
+    <li>Операции с числами и строками</li>
+    <li>Форматирование</li>
+    <li>Ветвления (операторы if/else)</li>
+    <li>Циклы While/For</li>
+    <li>Коллекции (Collections)</li>
+    <li>list/dict/set comprehension</li>
+    <li>Функции и методы</li>
+    <li>Функциональное программирование</li>
+    <li>Потоковый ввод и вывод</li>
+    <li>Работа с текстовыми файлами (чтение, запись)</li>
+    <li>Сериализация данных: JSON, csv, pickle and shelve</li>
+    <li>Генераторы (Generators)</li>
+    <li>Модуль, область видимости, импорт</li>
+    <li>zip/filter/all/any</li>
+    <li>ООП в Python</li>
+    <li>Обработка исключений</li>
+    <li>Модуль Math</li>
+    <li>Полезные библиотеки и фреймворки</li>
+    <li>Декораторы</li>
+    <li>Дескрипторы</li>
+    <li>Основы написания тестов</li>
+    <li class="last">Множество (Set)</li>
+  </ul>
+</div>
+
+{% endblock %}

@@ -1,3 +1,7 @@
+.content {
+    height: auto;
+}
+
 .algo_title {
     margin-left: 100px;
     margin-top: 50px;
@@ -40,7 +44,7 @@
     content      : '';
     display      : block;
     position     : absolute;
-    top          : calc(var(--spacing) / -2);
+    top          : calc(var(--spacing) / -2.5);
     left         : -1px;
     width        : calc(var(--spacing) + 2px);
     height       : calc(var(--spacing) + 1px);
@@ -52,13 +56,13 @@
     content      : '';
     display      : block;
     position     : absolute;
-    top          : calc(var(--spacing) / -2);
+    top          : calc(var(--spacing) / -2.5);
     left         : -2px;
     width        : calc(var(--spacing) + 2px);
     height       : calc(var(--spacing) + 1px);
     border       : solid #ff9900e9;
     border-width : 0 0 2px 2px;
-} 
+}
 
 .tree summary {
     display : block;
@@ -99,27 +103,52 @@
     line-height : calc(2 * var(--radius) - 2px);
     text-align  : center;
 }
-  
-.tree details[open] > summary::before{
+
+ul:not(.tree) {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.5s ease-out;
+  }
+
+.tree-in>ul {
+  max-height:100vh;
+  transition: 0.5s ease-in;
+}
+
+.tree-in > summary::before {
     content : '−';
 }
 
-.tree details {
-    transition: height 1s ease;
+.content {
+    margin-bottom: 100px;
 }
 
-.tree details:not([open]) { 
-    height: 30px; 
-} 
-
-.details1[open] { 
-    height: 525px; 
+.tree li {
+    max-width: 550px;
 }
 
-.details2[open] { 
-    height: 280px; 
+.tree li::before {
+        content      : '';
+        display      : block;
+        position     : absolute;
+        top          : calc(var(--spacing) / -2.5);
+        left         : -1px;
+        width        : calc(var(--spacing) + 2px);
+        height       : calc(var(--spacing) + 1px);
+        border       : solid #ff9900e9;
+        border-width : 0 0 2px 2px;
 }
 
-.details3[open] { 
-    height: 280px; 
+.tree ul li ul li::before {
+    content      : '';
+    display      : block;
+    position     : absolute;
+    top          : calc(var(--spacing) / -2.5);
+    left         : -1px;
+    width        : calc(var(--spacing) + 2px);
+    height       : calc(var(--spacing) + 1px);
+    border       : solid #ff9900e9;
+    border-width : 0 0 2px 2px;
 }
+
+

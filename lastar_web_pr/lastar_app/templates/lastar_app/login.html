@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} <p>Название страницы</p> {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/AC.ico' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+</head>
+
+<body class="color-change-2x">
+
+<div class="authorization_block center">
+
+    <div class="login_block">
+        <a class="close_box" href="#"><img class="img_close" src="{% static 'img/close_blue.png' %}"
+                                           alt="close_blue"></a>
+        <h1 class="reg_title">Авторизация</h1>
+        <form class="reg_form" action="#" method="post">
+            <input class="input_field f1" type="email" name="login" placeholder="Email" id=""><br>
+            <input class="input_field f1" type="password" name="password" placeholder="Пароль" id=""><br>
+            <p style="margin-bottom: 20px;"><a class="forgot" href="#">Восстановить пароль</a><a class="forgot_pos"
+                                                                                                 href="#">Зарегистрироваться</a>
+            </p>
+            <div>
+                <a href="#">Войти через Google</a><br>
+                <a href="#">Войти через Яндекс</a><br>
+            </div>
+
+            <button class="button_auth_submit" type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>

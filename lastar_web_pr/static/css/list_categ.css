@@ -33,7 +33,7 @@
 }
 
 .tree li {
-    border-left : 2px solid #ff9900e9;
+    border-left : 3px solid #ff9900e9;
 }
 
 .tree li:last-child{
@@ -49,7 +49,7 @@
     width        : calc(var(--spacing) + 2px);
     height       : calc(var(--spacing) + 1px);
     border       : solid #ff9900e9;
-    border-width : 0 0 2px 2px;
+    border-width : 0 0 3px 2px;
   }
 
 .tree ul li::before {
@@ -61,7 +61,7 @@
     width        : calc(var(--spacing) + 2px);
     height       : calc(var(--spacing) + 1px);
     border       : solid #ff9900e9;
-    border-width : 0 0 2px 2px;
+    border-width : 0 0 3px 2px;
 }
 
 .tree summary {
@@ -136,7 +136,7 @@ ul:not(.tree) {
         width        : calc(var(--spacing) + 2px);
         height       : calc(var(--spacing) + 1px);
         border       : solid #ff9900e9;
-        border-width : 0 0 2px 2px;
+        border-width : 0 0 3px 2px;
 }
 
 .tree ul li ul li::before {
@@ -148,7 +148,7 @@ ul:not(.tree) {
     width        : calc(var(--spacing) + 2px);
     height       : calc(var(--spacing) + 1px);
     border       : solid #ff9900e9;
-    border-width : 0 0 2px 2px;
+    border-width : 0 0 3px 2px;
 }
 
 

@@ -1,10 +1,52 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} <p>Название страницы</p> {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/AC.ico' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 </head>
-<body>
+
+<body class="color-change-2x">
+
+    <div class="authorization_block center">
+        <div class="registration_block">
+            <a class="close_box" href="index.html"><img class="img_close" src="{% static 'img/close_blue.png' %}"
+                    alt="close_blue"></a>
+            <h1 class="reg_title">Регистрация в личном кабинете</h1>
+            <p class="reg_txt"> <span class="reg_txt2">Регистрация позволит Вам получать специальные предложения
+                    AmberCorp, при желании
+                    — подписаться на новостные рассылки AmberCorp. </span><br><br>
+
+                Пожалуйста, укажите полные и достоверные данные; это позволит предоставлять Вам наиболее подходящую
+                информацию. AmberCorp гарантирует конфиденциальность Ваших данных: мы не разглашаем их и никому не
+                передаём.
+            </p>
+            <form class="reg_form" action="#" method="post">
+                <div class="input_greed">
+                    <input class="input_field" type="text" name="first_name" placeholder="Имя" id="">
+                    <input class="input_field" type="email" name="email" placeholder="Email" id="" required>
+                    <input class="input_field" type="text" name="second_name" placeholder="Фамилия" id="">
+                    <input class="input_field" type="password" name="password" placeholder="Пароль" id="" required>
+                    <input class="input_field" type="text" name="nick_name" placeholder="Логин" id="" required>
+                    <input class="input_field" type="password" name="password" placeholder="Повторите пароль" id=""
+                        required>
+                    <p><input type="checkbox" name="agreement" required><span> Я даю </span><a href="#" class="forgot">согласие на
+                            обработку персональных данных</a></p>
+                </div>
+                <button class="button_registration_submit" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
 
 </body>
+
 </html>

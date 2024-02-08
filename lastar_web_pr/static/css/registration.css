@@ -1,0 +1,108 @@
+.center {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.registration_block {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #f7ecd5;
+    align-content: center;
+    justify-content: center;
+}
+
+.close_box {
+    cursor: default;
+}
+
+.img_close {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 15px;
+}
+
+.reg_title {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.reg_txt {
+    max-width: 1000px;
+    font-size: 18px;
+    margin-top: 50px;
+    line-height: 25px;
+}
+
+.reg_txt2 {
+    font-weight: 600;
+}
+
+.reg_form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input_greed {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 527px 527px;
+    grid-template-rows: 50px 50px 50px 50px;
+}
+
+.input_field {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    width: 90%;
+    height: 25px;
+}
+
+.forgot {
+    color: #f85757e8;
+}
+
+.button_registration_submit {
+    margin-top: 10px;
+    position: relative;
+    background-color: #f85757e8;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #f85757e8;
+    padding: 0 150px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.button_registration_submit:after{
+    content: 'Зарегистрироваться';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #ec4321;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: 0.35s;
+}
+
+.button_registration_submit:hover:after {
+    transform: translateY(0);
+    cursor: pointer;
+}
+
